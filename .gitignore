@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/
+build/
+*.xcuserstate
+*.mobileprovision
+.DS_Store
+*.ipa
+*.app

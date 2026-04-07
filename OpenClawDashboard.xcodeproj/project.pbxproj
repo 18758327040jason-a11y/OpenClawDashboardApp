@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E2F210EA45411A8237BE254 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62AA083A23A25BA5AFD7F4C /* ContentView.swift */; };
+		155A780801B5494FC79109FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5232ED9A6B36B1B9B311C2CC /* Assets.xcassets */; };
+		1857F1CFCA0E1211E9EF4C2A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EA0B54BE3C823FDDC5FA5 /* main.swift */; };
+		18BD57AFBD2F1E04D46D0556 /* SessionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CABE5EE4BC4330963A08E /* SessionsView.swift */; };
+		2627117CE79117E7A72BC636 /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EF7954B8D0E5EE785F46FB /* SkillsView.swift */; };
+		2D83E06C3CF1B22ED7C4B768 /* OpenClawDashboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E361C88DFDDAE18864795C8D /* OpenClawDashboardApp.swift */; };
+		3B5D14D7FEAED43B59B803AF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C571387BE0C991FF18850 /* SettingsView.swift */; };
+		60870B6D250F6BC494CD7F5A /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B465FFAF220DDC2D19A9B /* ChatView.swift */; };
+		745920742CC638684EDBA5F0 /* ChannelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B354C969DFFE5988D6EEFB63 /* ChannelsView.swift */; };
+		856B748E58AE69BABDD56AA1 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887FE8AB985C11B59A27690A /* SidebarView.swift */; };
+		947BD1FC372E3E673427884A /* GatewayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF00F3286FD4D9EC0F6EB7F /* GatewayService.swift */; };
+		A3A81A940613BDE63BABF635 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C2BB465D505CAAA881CAA /* Message.swift */; };
+		AF6D9FF5F1CDC8BAE7CDC293 /* ModelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C02DE1C8A71F418ED05702 /* ModelPickerView.swift */; };
+		BC9A5496EF5291057E31A5F1 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B024EB33D77A5C7DF6D0E47A /* Models.swift */; };
+		D5909B758459C41C1EF9C255 /* ConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3513458E7E3992FEC240DA92 /* ConfigService.swift */; };
+		F172A2F62850A7E0F5D3DAEF /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47BDB37B81D76D23120C92 /* MessageBubbleView.swift */; };
+		F2772098091C042FFE2E39A7 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DDF09400E2421DAC098A62 /* OverviewView.swift */; };
+		F427E4F6FD242E8D94036E89 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06621A9A946BA8489D59429A /* Channel.swift */; };
+		FAC855663117384CB3E0C1AD /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBC2806923418787B09642A /* Session.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		041EA0B54BE3C823FDDC5FA5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		06621A9A946BA8489D59429A /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		092C571387BE0C991FF18850 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0EBC2806923418787B09642A /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		141CABE5EE4BC4330963A08E /* SessionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsView.swift; sourceTree = "<group>"; };
+		1B47BDB37B81D76D23120C92 /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
+		21A811C789A543021136C222 /* OpenClawDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenClawDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33DDF09400E2421DAC098A62 /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
+		3513458E7E3992FEC240DA92 /* ConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigService.swift; sourceTree = "<group>"; };
+		36C02DE1C8A71F418ED05702 /* ModelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerView.swift; sourceTree = "<group>"; };
+		3F4C2BB465D505CAAA881CAA /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		43EF7954B8D0E5EE785F46FB /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
+		5232ED9A6B36B1B9B311C2CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DF00F3286FD4D9EC0F6EB7F /* GatewayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayService.swift; sourceTree = "<group>"; };
+		816D19CBE8646C26D02735BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		854CD6B287A2CBF3B5851AB1 /* OpenClawDashboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenClawDashboard.entitlements; sourceTree = "<group>"; };
+		887FE8AB985C11B59A27690A /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		B024EB33D77A5C7DF6D0E47A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B354C969DFFE5988D6EEFB63 /* ChannelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsView.swift; sourceTree = "<group>"; };
+		C23B465FFAF220DDC2D19A9B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		E361C88DFDDAE18864795C8D /* OpenClawDashboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenClawDashboardApp.swift; sourceTree = "<group>"; };
+		F62AA083A23A25BA5AFD7F4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1728A7476975E4B78713B0DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21A811C789A543021136C222 /* OpenClawDashboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B9F2483E36BD7C44ECB015F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80C3725A218D15DDF727D7CD /* Components */,
+				B354C969DFFE5988D6EEFB63 /* ChannelsView.swift */,
+				C23B465FFAF220DDC2D19A9B /* ChatView.swift */,
+				33DDF09400E2421DAC098A62 /* OverviewView.swift */,
+				141CABE5EE4BC4330963A08E /* SessionsView.swift */,
+				092C571387BE0C991FF18850 /* SettingsView.swift */,
+				887FE8AB985C11B59A27690A /* SidebarView.swift */,
+				43EF7954B8D0E5EE785F46FB /* SkillsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		593A773ACB277F5468E4406F /* OpenClawDashboard */ = {
+			isa = PBXGroup;
+			children = (
+				5A4ED16506E55062A9DCA18C /* Models */,
+				A922EFDBBF6545DC200A02B9 /* Resources */,
+				D49FA1EFD3A269BA8E07197E /* Services */,
+				2B9F2483E36BD7C44ECB015F /* Views */,
+				F62AA083A23A25BA5AFD7F4C /* ContentView.swift */,
+				816D19CBE8646C26D02735BB /* Info.plist */,
+				041EA0B54BE3C823FDDC5FA5 /* main.swift */,
+				854CD6B287A2CBF3B5851AB1 /* OpenClawDashboard.entitlements */,
+				E361C88DFDDAE18864795C8D /* OpenClawDashboardApp.swift */,
+			);
+			path = OpenClawDashboard;
+			sourceTree = "<group>";
+		};
+		5A4ED16506E55062A9DCA18C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				06621A9A946BA8489D59429A /* Channel.swift */,
+				3F4C2BB465D505CAAA881CAA /* Message.swift */,
+				B024EB33D77A5C7DF6D0E47A /* Models.swift */,
+				0EBC2806923418787B09642A /* Session.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		80C3725A218D15DDF727D7CD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1B47BDB37B81D76D23120C92 /* MessageBubbleView.swift */,
+				36C02DE1C8A71F418ED05702 /* ModelPickerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		89216CF364EE57BBBD3DE40F = {
+			isa = PBXGroup;
+			children = (
+				593A773ACB277F5468E4406F /* OpenClawDashboard */,
+				1728A7476975E4B78713B0DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A922EFDBBF6545DC200A02B9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5232ED9A6B36B1B9B311C2CC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D49FA1EFD3A269BA8E07197E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3513458E7E3992FEC240DA92 /* ConfigService.swift */,
+				5DF00F3286FD4D9EC0F6EB7F /* GatewayService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A0DEF5DCD9E3204BC75BC32 /* OpenClawDashboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8177526B56F224F1C7550D65 /* Build configuration list for PBXNativeTarget "OpenClawDashboard" */;
+			buildPhases = (
+				7F312FEB7065D0D9EAF65614 /* Sources */,
+				8D1EFC74CC62C3A0E8ED5B30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenClawDashboard;
+			packageProductDependencies = (
+			);
+			productName = OpenClawDashboard;
+			productReference = 21A811C789A543021136C222 /* OpenClawDashboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DF0EE82C1727DE55E8011ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					5A0DEF5DCD9E3204BC75BC32 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 5D7AD628038B418C37692DB2 /* Build configuration list for PBXProject "OpenClawDashboard" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 89216CF364EE57BBBD3DE40F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1728A7476975E4B78713B0DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A0DEF5DCD9E3204BC75BC32 /* OpenClawDashboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1EFC74CC62C3A0E8ED5B30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				155A780801B5494FC79109FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F312FEB7065D0D9EAF65614 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F427E4F6FD242E8D94036E89 /* Channel.swift in Sources */,
+				745920742CC638684EDBA5F0 /* ChannelsView.swift in Sources */,
+				60870B6D250F6BC494CD7F5A /* ChatView.swift in Sources */,
+				D5909B758459C41C1EF9C255 /* ConfigService.swift in Sources */,
+				0E2F210EA45411A8237BE254 /* ContentView.swift in Sources */,
+				947BD1FC372E3E673427884A /* GatewayService.swift in Sources */,
+				A3A81A940613BDE63BABF635 /* Message.swift in Sources */,
+				F172A2F62850A7E0F5D3DAEF /* MessageBubbleView.swift in Sources */,
+				AF6D9FF5F1CDC8BAE7CDC293 /* ModelPickerView.swift in Sources */,
+				BC9A5496EF5291057E31A5F1 /* Models.swift in Sources */,
+				2D83E06C3CF1B22ED7C4B768 /* OpenClawDashboardApp.swift in Sources */,
+				F2772098091C042FFE2E39A7 /* OverviewView.swift in Sources */,
+				FAC855663117384CB3E0C1AD /* Session.swift in Sources */,
+				18BD57AFBD2F1E04D46D0556 /* SessionsView.swift in Sources */,
+				3B5D14D7FEAED43B59B803AF /* SettingsView.swift in Sources */,
+				856B748E58AE69BABDD56AA1 /* SidebarView.swift in Sources */,
+				2627117CE79117E7A72BC636 /* SkillsView.swift in Sources */,
+				1857F1CFCA0E1211E9EF4C2A /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		060F5785B642564579DD845B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		B4ED20D198AB6335586E0EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OpenClawDashboard/OpenClawDashboard.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenClawDashboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.openclaw.dashboard;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		C8E72D2D6CABA2E983CDE3BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OpenClawDashboard/OpenClawDashboard.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenClawDashboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.openclaw.dashboard;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		DB6F329F2B13DF6FCD5BE56B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D7AD628038B418C37692DB2 /* Build configuration list for PBXProject "OpenClawDashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				060F5785B642564579DD845B /* Debug */,
+				DB6F329F2B13DF6FCD5BE56B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8177526B56F224F1C7550D65 /* Build configuration list for PBXNativeTarget "OpenClawDashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8E72D2D6CABA2E983CDE3BE /* Debug */,
+				B4ED20D198AB6335586E0EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DF0EE82C1727DE55E8011ED /* Project object */;
+}
