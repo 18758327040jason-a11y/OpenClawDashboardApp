@@ -3,26 +3,30 @@ import WebKit
 
 // MARK: - KeyboardPassThroughWebView
 class KeyboardPassThroughWebView: WKWebView {
-    // 不强制抢 firstResponder，让 web 内容自然显示光标
+    private var pasteMenuItem: NSMenuItem?
+
     override var acceptsFirstResponder: Bool { false }
 
-    // 拦截 Cmd+C/V/X/A，通过 JS 在 web 内容层执行
     override func keyDown(with event: NSEvent) {
         let cmd = event.modifierFlags.contains(.command)
         guard cmd else { super.keyDown(with: event); return }
-
         let key = event.charactersIgnoringModifiers?.lowercased() ?? ""
-        let editKeys = ["c", "v", "x", "a"]
-
-        guard editKeys.contains(key) else { super.keyDown(with: event); return }
-
         switch key {
         case "c": evaluateJavaScript("document.execCommand('copy')", completionHandler: nil)
-        case "v": evaluateJavaScript(
-            "navigator.clipboard.readText().then(t=>{document.execCommand('insertText',false,t)}).catch(()=>{})",
-            completionHandler: nil)
         case "x": evaluateJavaScript("document.execCommand('cut')", completionHandler: nil)
+        case "v":
+            // 走系统剪贴板，不走 JS clipboard API，避免弹窗
+            if let text = NSPasteboard.general.string(forType: .string), !text.isEmpty {
+                let escaped = text
+                    .replacingOccurrences(of: "\\", with: "\\\\")
+                    .replacingOccurrences(of: "'", with: "\\'")
+                    .replacingOccurrences(of: "\n", with: "\\n")
+                    .replacingOccurrences(of: "\r", with: "\\r")
+                evaluateJavaScript("document.execCommand('insertText',false,'\(escaped)')", completionHandler: nil)
+            }
         case "a": evaluateJavaScript("document.execCommand('selectAll')", completionHandler: nil)
+        case "z": evaluateJavaScript("document.execCommand('undo')", completionHandler: nil)
+        case "y": evaluateJavaScript("document.execCommand('redo')", completionHandler: nil)
         default: super.keyDown(with: event)
         }
     }
@@ -32,20 +36,20 @@ class KeyboardPassThroughWebView: WKWebView {
 struct DashboardWebView: NSViewRepresentable {
     let url: URL
 
-    func makeCoordinator() -> Coordinator {
-        Coordinator()
-    }
-
     func makeNSView(context: Context) -> KeyboardPassThroughWebView {
         let config = WKWebViewConfiguration()
         let webView = KeyboardPassThroughWebView(frame: .zero, configuration: config)
+        
+        // App 启动时预读剪贴板，提前触发 macOS 授权（如果尚未授权）
+        DispatchQueue.main.async {
+            let _ = NSPasteboard.general.string(forType: .string)
+        }
+        
         webView.load(URLRequest(url: url))
         return webView
     }
 
     func updateNSView(_ nsView: KeyboardPassThroughWebView, context: Context) {}
-
-    class Coordinator: NSObject {}
 }
 
 // MARK: - ChatView
